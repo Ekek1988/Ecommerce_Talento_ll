@@ -1,0 +1,84 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.productos-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+}
+
+.producto {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+
+.producto img {
+  max-width: 100%;
+  height: auto;
+}
+
+button {
+  padding: 8px 12px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.carrito {
+  margin-top: 30px;
+}
+
+.oculto {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .productos-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+.contacto {
+  margin-top: 40px;
+  padding: 20px;
+  border-top: 2px solid #ccc;
+}
+
+.contacto form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 400px;
+}
+
+.contacto label {
+  font-weight: bold;
+}
+
+.contacto input,
+.contacto textarea {
+  padding: 8px;
+  width: 100%;
+}
+
+.contacto button {
+  align-self: flex-start;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+}
